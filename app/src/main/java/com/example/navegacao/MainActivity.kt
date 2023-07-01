@@ -8,14 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
-import com.arcgismaps.mapping.ArcGISMap
-import com.arcgismaps.mapping.BasemapStyle
 import com.example.navegacao.ui.theme.NavegacaoTheme
 import io.github.cdimascio.dotenv.dotenv
 
@@ -49,7 +45,6 @@ fun MainScreen(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize(),
         horizontalAlignment =  Alignment.CenterHorizontally
     ) {
-        val map = remember { mutableStateOf(ArcGISMap(BasemapStyle.ArcGISNavigationNight)) }
-        MapViewCompose(arcGISMap = map.value)
+        MapViewCompose()
     }
 }
