@@ -1,4 +1,4 @@
-# Atividade da disciplina de SIG
+# Atividade da disciplina de SIG (sem 7 e sem 8)
 
 Neste repositório disponibilizo a resolução da atividade proposta na disciplina de Sistemas de Informações Geográficas do curso de Pós Graduação em Desenvolvimento Web e Mobile.
 
